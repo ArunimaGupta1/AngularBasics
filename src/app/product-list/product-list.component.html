@@ -1,0 +1,22 @@
+<h3>product-list works!</h3>
+<div *ngFor="let p of products">
+    {{p.pcode}} {{p.pname}} {{p.available}} {{p.price}} {{p.rating}}
+</div>
+
+<table>
+    <tr>
+        <th>Product code</th>
+        <th>Product name</th>
+        <th>Availability</th>
+        <th>Price</th>
+        <th>Rating</th>
+    </tr>
+    <tr *ngFor="let p of products">
+        <td>{{p.pcode}}</td>
+        <td>{{p.pname}}</td>
+        <td>{{p.available}}</td>
+        <td>{{p.price}}</td>
+        <td>{{p.rating}}</td>
+
+    </tr>
+</table>

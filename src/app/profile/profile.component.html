@@ -1,0 +1,4 @@
+<h1 [align]="float">Profile page</h1>
+<h2 [align]="float" [style.color]="flag?'red':'green'">Welcome {{name}}</h2>
+<img *ngIf="flag" [src]="url" [height]="height" [width]="width">
+<button (click)="display()">Click here!</button>
