@@ -5,8 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { MyLibComponent, MyLibModule } from 'projects/my-lib/src/public-api';
 
 @NgModule({
   declarations: [
@@ -17,8 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    HttpClientModule
+    MyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
